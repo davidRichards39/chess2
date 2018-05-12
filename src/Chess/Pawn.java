@@ -11,10 +11,10 @@ public class Pawn {
 	public Pawn(int color, int x, int y) {
 		
 		if (color == 1) {
-			pawnr = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/pawn.png");
+			pawnr = Toolkit.getDefaultToolkit().getImage("assets/pawn.png");
 		}
 		else if(color ==2) {
-			pawnr = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/pawnb.png");
+			pawnr = Toolkit.getDefaultToolkit().getImage("assets/pawnb.png");
 		}
 		
 		pawnx = x;

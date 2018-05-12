@@ -26,9 +26,9 @@ class MyCanvas extends JComponent {
 		Rook[] rook = new Rook[4];
 		Bishop[] bishop = new Bishop[4];
 		Horse[] horse = new Horse[4];
-		Image light = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/light.png");
+		Image light = Toolkit.getDefaultToolkit().getImage("assets/light.png");
 		Image board = Toolkit.getDefaultToolkit()
-				.getImage("C:/Users/Galen/eclipse-workspace/desktop app/chess board.png");
+				.getImage("assets/chess board.png");
 
 		g2.drawImage(board, 0, 0, this);
 

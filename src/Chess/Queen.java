@@ -10,10 +10,10 @@ public class Queen {
 
 	public Queen(int color, int x, int y) {
 		if (color == 1) {
-			queenr = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/queen.png");
+			queenr = Toolkit.getDefaultToolkit().getImage("assets/queen.png");
 		}
 		else if(color ==2) {
-			queenr = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/queenb.png");
+			queenr = Toolkit.getDefaultToolkit().getImage("assets/queenb.png");
 		}
 		queenx = x;
 		queeny = y;

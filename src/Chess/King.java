@@ -10,10 +10,10 @@ public class King {
 
 	public King(int color, int x, int y) {
 		if (color == 1) {
-			kingr = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/king.png");
+			kingr = Toolkit.getDefaultToolkit().getImage("assets/king.png");
 		}
 		else if(color ==2) {
-			kingr = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/kingb.png");
+			kingr = Toolkit.getDefaultToolkit().getImage("assets/kingb.png");
 		}
 		
 		kingx = x;

@@ -11,10 +11,10 @@ public class Bishop {
 
 	public Bishop(int color, int x, int y) {
 		if (color == 1) {
-			bishopr = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/bishop.png");
+			bishopr = Toolkit.getDefaultToolkit().getImage("assets/bishop.png");
 		}
 		else if(color ==2) {
-			bishopr = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/bishopb.png");
+			bishopr = Toolkit.getDefaultToolkit().getImage("assets/bishopb.png");
 		}
 		
 		bishopx = x;

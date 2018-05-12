@@ -10,9 +10,9 @@ public class Horse {
 
 	public Horse(int color, int x, int y) {
 		if (color == 1) {
-			horser = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/horse.png");
+			horser = Toolkit.getDefaultToolkit().getImage("assets/horse.png");
 		} else if (color == 2) {
-			horser = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/horseb.png");
+			horser = Toolkit.getDefaultToolkit().getImage("assets/horseb.png");
 		}
 		horsex = x;
 		horsey = y;

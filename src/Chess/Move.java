@@ -10,7 +10,7 @@ public class Move {
 	Image light;
 
 	public Move() {
-		light = Toolkit.getDefaultToolkit().getImage("C:/Users/Galen/eclipse-workspace/desktop app/light.png");
+		light = Toolkit.getDefaultToolkit().getImage("assets/light.png");
 
 	}
 

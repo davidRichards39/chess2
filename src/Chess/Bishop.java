@@ -3,22 +3,27 @@ package Chess;
 import java.awt.Image;
 import java.awt.Toolkit;
 
-public class Bishop {
-	
-	Image bishopr;
-	int bishopx;
-	int bishopy;
+public class Bishop implements Piece {
+	Image img;
+	String color;
 
-	public Bishop(int color, int x, int y) {
-		if (color == 1) {
-			bishopr = Toolkit.getDefaultToolkit().getImage("assets/bishop.png");
+	public Bishop(String color_) {
+		color = color_;
+		if (color.equals("red")) {
+			img = Toolkit.getDefaultToolkit().getImage("assets/bishop.png");
 		}
-		else if(color ==2) {
-			bishopr = Toolkit.getDefaultToolkit().getImage("assets/bishopb.png");
+		else if(color.equals("blue")) {
+			img = Toolkit.getDefaultToolkit().getImage("assets/bishopb.png");
 		}
-		
-		bishopx = x;
-		bishopy = y;
+
+	}
+
+	public Image getImage() {
+		return img;
+	}
+
+	public void click() {
+		System.out.printf("I'm a filthy %s bishop\n", color);
 	}
 
 }

@@ -3,24 +3,27 @@ package Chess;
 import java.awt.Image;
 import java.awt.Toolkit;
 
-public class Pawn {
-	Image pawnr;
-	int pawnx;
-	int pawny;
+public class Pawn implements Piece {
+	Image img;
+	String color;
 
-	public Pawn(int color, int x, int y) {
-		
-		if (color == 1) {
-			pawnr = Toolkit.getDefaultToolkit().getImage("assets/pawn.png");
+	public Pawn(String color_) {
+		color = color_;
+		if (color.equals("red")) {
+			img = Toolkit.getDefaultToolkit().getImage("assets/pawn.png");
 		}
-		else if(color ==2) {
-			pawnr = Toolkit.getDefaultToolkit().getImage("assets/pawnb.png");
+		else if(color.equals("blue")) {
+			img = Toolkit.getDefaultToolkit().getImage("assets/pawnb.png");
 		}
-		
-		pawnx = x;
-		pawny = y;		
-		
+
 	}
-	
+
+	public Image getImage() {
+		return img;
+	}
+
+	public void click() {
+		System.out.printf("I'm a filthy %s pawn\n", color);
+	}
 	
 }

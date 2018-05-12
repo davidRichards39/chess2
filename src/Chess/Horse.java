@@ -3,19 +3,27 @@ package Chess;
 import java.awt.Image;
 import java.awt.Toolkit;
 
-public class Horse {
-	Image horser;
-	int horsex;
-	int horsey;
+public class Horse implements Piece {
+	Image img;
+	String color;
 
-	public Horse(int color, int x, int y) {
-		if (color == 1) {
-			horser = Toolkit.getDefaultToolkit().getImage("assets/horse.png");
-		} else if (color == 2) {
-			horser = Toolkit.getDefaultToolkit().getImage("assets/horseb.png");
+	public Horse(String color_) {
+		color = color_;
+		if (color.equals("red")) {
+			img = Toolkit.getDefaultToolkit().getImage("assets/horse.png");
 		}
-		horsex = x;
-		horsey = y;
+		else if(color.equals("blue")) {
+			img = Toolkit.getDefaultToolkit().getImage("assets/horseb.png");
+		}
+
+	}
+
+	public Image getImage() {
+		return img;
+	}
+
+	public void click() {
+		System.out.printf("I'm a filthy %s horse\n", color);
 	}
 
 }

@@ -1,4 +1,4 @@
-package Chess;
+package chess;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -44,7 +44,7 @@ public class Board {
 		// create the pawns
 		for (int x = 0; x < 8; x ++) {
 			spaces[x][1].piece = new Pawn("red");
-			spaces[x][7].piece = new Pawn("blue");
+			spaces[x][6].piece = new Pawn("blue");
 		}
 
 		// create the pawns

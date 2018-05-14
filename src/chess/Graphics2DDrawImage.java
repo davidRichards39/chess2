@@ -1,4 +1,4 @@
-package Chess;
+package chess;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
